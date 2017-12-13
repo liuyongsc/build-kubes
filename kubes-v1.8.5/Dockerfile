@@ -1,0 +1,16 @@
+FROM gcr.io/google_containers/kube-apiserver-amd64:v1.8.5
+FROM gcr.io/google_containers/kube-controller-manager-amd64:v1.8.5
+FROM gcr.io/google_containers/kube-scheduler-amd64:v1.8.5
+FROM gcr.io/google_containers/kube-proxy-amd64:v1.8.5
+FROM gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5
+FROM gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5
+FROM gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5
+FROM quay.io/coreos/flannel:v0.9.0-amd64
+FROM gcr.io/google_containers/etcd-amd64:3.0.17
+FROM gcr.io/google_containers/pause-amd64:3.0
+FROM quay.io/coreos/flannel:v0.9.0-amd64
+FROM gcr.io/google_containers/kubernetes-dashboard-amd64:v1.7.1
+FROM gcr.io/google_containers/kubernetes-dashboard-init-amd64:v1.0.0
+FROM gcr.io/google_containers/heapster-influxdb-amd64:v1.3.3
+FROM gcr.io/google_containers/heapster-grafana-amd64:v4.4.3
+FROM gcr.io/google_containers/heapster-amd64:v1.4.0
